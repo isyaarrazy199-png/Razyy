@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Toko Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>TOKO ONLINE ISA</h1>
+  <p>Murah • Aman • Terpercaya</p>
+</header>
+
+<section class="produk">
+  <div class="card">
+    <img src="https://via.placeholder.com/200">
+    <h3>Produk A</h3>
+    <p>Rp 10.000</p>
+    <button onclick="tambah('Produk A',10000)">Tambah</button>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/200">
+    <h3>Produk B</h3>
+    <p>Rp 20.000</p>
+    <button onclick="tambah('Produk B',20000)">Tambah</button>
+  </div>
+</section>
+
+<section class="keranjang">
+  <h2>Keranjang</h2>
+  <ul id="list"></ul>
+  <p>Total: Rp <span id="total">0</span></p>
+  <button onclick="pesan()">Pesan via WhatsApp</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
